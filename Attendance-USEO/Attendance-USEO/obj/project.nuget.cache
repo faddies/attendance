@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "iEXTBolUC4QDeAEyEns1T8iQpwAyila9oxcJ1JYp3CAZxllbBOX7tOLD+kBVDpumuR6NoYUyHRfxuTZWWLuQLg==",
+  "dgSpecHash": "hji4/JZ3x8fffQFtFMV/J8uC1Ku6RJk10IbOkNbBsBOnMUbyENKk3zuFTedjKZvgLFP7oTt8dkXiHz9Ks1gkUw==",
   "success": true,
   "projectFilePath": "E:\\NewProjects\\Attendance-USEO\\Attendance-USEO\\Attendance-USEO.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Faddies\\.nuget\\packages\\google.apis\\1.51.0\\google.apis.1.51.0.nupkg.sha512",
+    "C:\\Users\\Faddies\\.nuget\\packages\\google.apis.auth\\1.51.0\\google.apis.auth.1.51.0.nupkg.sha512",
+    "C:\\Users\\Faddies\\.nuget\\packages\\google.apis.core\\1.51.0\\google.apis.core.1.51.0.nupkg.sha512",
+    "C:\\Users\\Faddies\\.nuget\\packages\\google.apis.drive.v3\\1.51.0.2265\\google.apis.drive.v3.1.51.0.2265.nupkg.sha512",
+    "C:\\Users\\Faddies\\.nuget\\packages\\google.apis.sheets.v4\\1.51.0.2272\\google.apis.sheets.v4.1.51.0.2272.nupkg.sha512",
+    "C:\\Users\\Faddies\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -10,14 +10,53 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using Google.Apis.Sheets.v4;
+using Google.Apis.Auth.OAuth2;
+using System.IO;
+using System.Collections;
 
 namespace Attendance_USEO
 {
     public partial class Form1 : Form
     {
+        static readonly string[] Scopes = { SheetsService.Scope.Spreadsheets };
+        static readonly string SpreadSheetId = "1wD02lplHt-nuJLLzcCa_PBgEiIx-Lf6dYvwZ6OptjAY";
+        static readonly string applicationName = "Attendance";
+        static readonly string BaseSheetName = "BaseData";
+        static SheetsService service;
+
         public Form1()
         {
             InitializeComponent();
+
+            GoogleCredential credential;
+            using (var stream = new FileStream("client_secrets.json", FileMode.Open, FileAccess.Read)) {
+
+                credential = GoogleCredential.FromStream(stream)
+                    .CreateScoped(Scopes);
+            }
+
+            service = new SheetsService(new Google.Apis.Services.BaseClientService.Initializer()
+            {
+
+                HttpClientInitializer = credential,
+                ApplicationName = applicationName,
+            });
+
+
+            var rowsgot = ReadEntries();
+            foreach (var row in rowsgot) {
+                textBox1.Text = (string)row[0];
+            }
+        }
+
+        static List<IList> ReadEntries()
+        {
+            var range = $"{BaseSheetName}!A1:A5";
+            var request = service.Spreadsheets.Values.Get(SpreadSheetId, range);
+            var response = request.Execute();
+            var values = response.Values;
+            return (List<IList>)values;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,12 +95,12 @@ namespace Attendance_USEO
 
             MachineNameText = MachineNameText + Environment.NewLine;
             MachineNameText = MachineNameText + getssidName;
-
-
+            
+            
             MachineNameText = MachineNameText + Environment.NewLine;
             MachineNameText = MachineNameText + macAddresses;
             textBox1.Text = MachineNameText;
-
+            
         }
     }
 }
