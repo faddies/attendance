@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Faddies\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Faddies\\.nuget\\packages"
+    ]
+  }
+}

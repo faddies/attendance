@@ -1,0 +1,15 @@
+E:\NewProjects\Attendance-USEO\Attendance-USEO\bin\Debug\netcoreapp3.1\Attendance-USEO.exe
+E:\NewProjects\Attendance-USEO\Attendance-USEO\bin\Debug\netcoreapp3.1\Attendance-USEO.deps.json
+E:\NewProjects\Attendance-USEO\Attendance-USEO\bin\Debug\netcoreapp3.1\Attendance-USEO.runtimeconfig.json
+E:\NewProjects\Attendance-USEO\Attendance-USEO\bin\Debug\netcoreapp3.1\Attendance-USEO.runtimeconfig.dev.json
+E:\NewProjects\Attendance-USEO\Attendance-USEO\bin\Debug\netcoreapp3.1\Attendance-USEO.dll
+E:\NewProjects\Attendance-USEO\Attendance-USEO\bin\Debug\netcoreapp3.1\Attendance-USEO.pdb
+E:\NewProjects\Attendance-USEO\Attendance-USEO\obj\Debug\netcoreapp3.1\Attendance-USEO.csprojAssemblyReference.cache
+E:\NewProjects\Attendance-USEO\Attendance-USEO\obj\Debug\netcoreapp3.1\Attendance_USEO.Form1.resources
+E:\NewProjects\Attendance-USEO\Attendance-USEO\obj\Debug\netcoreapp3.1\Attendance-USEO.csproj.GenerateResource.cache
+E:\NewProjects\Attendance-USEO\Attendance-USEO\obj\Debug\netcoreapp3.1\Attendance-USEO.AssemblyInfoInputs.cache
+E:\NewProjects\Attendance-USEO\Attendance-USEO\obj\Debug\netcoreapp3.1\Attendance-USEO.AssemblyInfo.cs
+E:\NewProjects\Attendance-USEO\Attendance-USEO\obj\Debug\netcoreapp3.1\Attendance-USEO.csproj.CoreCompileInputs.cache
+E:\NewProjects\Attendance-USEO\Attendance-USEO\obj\Debug\netcoreapp3.1\Attendance-USEO.dll
+E:\NewProjects\Attendance-USEO\Attendance-USEO\obj\Debug\netcoreapp3.1\Attendance-USEO.pdb
+E:\NewProjects\Attendance-USEO\Attendance-USEO\obj\Debug\netcoreapp3.1\Attendance-USEO.genruntimeconfig.cache
