@@ -44,63 +44,28 @@ namespace Attendance_USEO
             });
 
 
-            var rowsgot = ReadEntries();
-            foreach (var row in rowsgot) {
-                textBox1.Text = (string)row[0];
-            }
-        }
+            //ReadEntries(textBox1);
+                    }
 
-        static List<IList> ReadEntries()
+        static void ReadEntries(TextBox text)
         {
             var range = $"{BaseSheetName}!A1:A5";
             var request = service.Spreadsheets.Values.Get(SpreadSheetId, range);
             var response = request.Execute();
             var values = response.Values;
-            return (List<IList>)values;
+            string data = string.Empty;
+            foreach (var row in values) {
+                data = data + row[0];
+                data = data + Environment.NewLine;
+            }
+            text.Text = data;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string MachineNameText = string.Empty;
-            MachineNameText = Environment.MachineName;
-            MachineNameText = MachineNameText + Environment.NewLine;
-            MachineNameText = MachineNameText + Environment.UserName;
-            MachineNameText = MachineNameText + Environment.NewLine;
-            MachineNameText = MachineNameText + Dns.GetHostByName(Dns.GetHostName()).AddressList[0].ToString();
-            MachineNameText = MachineNameText + Environment.NewLine;
-            MachineNameText = MachineNameText + Dns.GetHostByName(Dns.GetHostName()).AddressList[1].ToString();
-
-            string macAddresses = "";
-
-            foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
-            {
-                if (nic.OperationalStatus == OperationalStatus.Up)
-                {
-                    macAddresses += nic.GetPhysicalAddress().ToString();
-                    break;
-                }
-            }
-
-            Process processstart = new Process();
-            processstart.StartInfo.FileName = "netsh.exe";
-            processstart.StartInfo.Arguments = "wlan show interfaces";
-            processstart.StartInfo.UseShellExecute = false;
-            processstart.StartInfo.RedirectStandardOutput = true;
-            processstart.Start();
-
-            string GetSSIDInfo = processstart.StandardOutput.ReadToEnd();
-            string getssidName = GetSSIDInfo.Substring(GetSSIDInfo.IndexOf("SSID"));
-            getssidName = getssidName.Substring(getssidName.IndexOf(":"));
-            getssidName = getssidName.Substring(2, getssidName.IndexOf("\n")).Trim();
-
-            MachineNameText = MachineNameText + Environment.NewLine;
-            MachineNameText = MachineNameText + getssidName;
-            
-            
-            MachineNameText = MachineNameText + Environment.NewLine;
-            MachineNameText = MachineNameText + macAddresses;
-            textBox1.Text = MachineNameText;
-            
+            Employee UserCreated = new Employee();
+            UserCreated.GenerateData();
+            textBox1.Text = UserCreated.MacAddress + Environment.NewLine + UserCreated.ConnectedWifi;
         }
     }
 }

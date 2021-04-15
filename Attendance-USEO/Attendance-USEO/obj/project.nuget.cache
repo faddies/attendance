@@ -11,5 +11,12 @@
     "C:\\Users\\Faddies\\.nuget\\packages\\google.apis.sheets.v4\\1.51.0.2272\\google.apis.sheets.v4.1.51.0.2272.nupkg.sha512",
     "C:\\Users\\Faddies\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file E:\\NewProjects\\Attendance-USEO\\Attendance-USEO\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\NewProjects\\Attendance-USEO\\Attendance-USEO\\Attendance-USEO.csproj": {}
+    "E:\\Projects\\Git\\Attendance-USEO\\Attendance-USEO\\Attendance-USEO.csproj": {}
   },
   "projects": {
-    "E:\\NewProjects\\Attendance-USEO\\Attendance-USEO\\Attendance-USEO.csproj": {
+    "E:\\Projects\\Git\\Attendance-USEO\\Attendance-USEO\\Attendance-USEO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\NewProjects\\Attendance-USEO\\Attendance-USEO\\Attendance-USEO.csproj",
+        "projectUniqueName": "E:\\Projects\\Git\\Attendance-USEO\\Attendance-USEO\\Attendance-USEO.csproj",
         "projectName": "Attendance-USEO",
-        "projectPath": "E:\\NewProjects\\Attendance-USEO\\Attendance-USEO\\Attendance-USEO.csproj",
-        "packagesPath": "C:\\Users\\Faddies\\.nuget\\packages\\",
-        "outputPath": "E:\\NewProjects\\Attendance-USEO\\Attendance-USEO\\obj\\",
+        "projectPath": "E:\\Projects\\Git\\Attendance-USEO\\Attendance-USEO\\Attendance-USEO.csproj",
+        "packagesPath": "C:\\Users\\Awais Irshad\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\Git\\Attendance-USEO\\Attendance-USEO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Faddies\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Awais Irshad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
